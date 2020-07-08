@@ -2,3 +2,5 @@
 - file: content/foundations
   sections:
     - file: content/classification
+    - file: content/regression
+- file: zbibliography

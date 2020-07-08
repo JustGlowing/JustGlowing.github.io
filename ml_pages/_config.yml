@@ -1,7 +1,7 @@
 # Book settings
 title: Pages of Machine Learning
-author: Giuseppe Vettigli
-logo: logo.png
+author: JustGlowing
+logo: ml_pages_logo.png
 
 html:
     extra_navbar: |
