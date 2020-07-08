@@ -1,0 +1,4 @@
+- file: content/intro
+- file: content/foundations
+  sections:
+    - file: content/classification
