@@ -3,4 +3,6 @@
   sections:
     - file: content/classification
     - file: content/regression
+    - file: content/clustering
+    - file: content/outliers
 - file: zbibliography
