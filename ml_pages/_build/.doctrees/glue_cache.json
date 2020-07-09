@@ -1,21 +1,5 @@
 {
   "content/classification": {
-    "seeds_fig_2": {
-      "data": {
-        "application/papermill.record/image/png": null,
-        "application/papermill.record/text/plain": "<Figure size 432x288 with 1 Axes>"
-      },
-      "metadata": {
-        "scrapbook": {
-          "mime_prefix": "application/papermill.record/",
-          "name": "seeds_fig_2"
-        },
-        "filenames": {
-          "image/png": "/Users/giuseppe.vettigli/Documents/ml_pages/ml_pages/_build/jupyter_execute/content/classification_3_0.png"
-        }
-      },
-      "output_type": "display_data"
-    },
     "seeds_fig_3": {
       "data": {
         "application/papermill.record/image/png": null,
@@ -28,6 +12,22 @@
         },
         "filenames": {
           "image/png": "/Users/giuseppe.vettigli/Documents/ml_pages/ml_pages/_build/jupyter_execute/content/classification_5_0.png"
+        }
+      },
+      "output_type": "display_data"
+    },
+    "seeds_fig_2": {
+      "data": {
+        "application/papermill.record/image/png": null,
+        "application/papermill.record/text/plain": "<Figure size 432x288 with 1 Axes>"
+      },
+      "metadata": {
+        "scrapbook": {
+          "mime_prefix": "application/papermill.record/",
+          "name": "seeds_fig_2"
+        },
+        "filenames": {
+          "image/png": "/Users/giuseppe.vettigli/Documents/ml_pages/ml_pages/_build/jupyter_execute/content/classification_3_0.png"
         }
       },
       "output_type": "display_data"
@@ -50,22 +50,6 @@
     }
   },
   "content/clustering": {
-    "seeds_cluster_fig_2": {
-      "output_type": "display_data",
-      "metadata": {
-        "scrapbook": {
-          "name": "seeds_cluster_fig_2",
-          "mime_prefix": "application/papermill.record/"
-        },
-        "filenames": {
-          "image/png": "/Users/giuseppe.vettigli/Documents/ml_pages/ml_pages/_build/jupyter_execute/content/clustering_3_0.png"
-        }
-      },
-      "data": {
-        "application/papermill.record/text/plain": "<Figure size 432x288 with 1 Axes>",
-        "application/papermill.record/image/png": null
-      }
-    },
     "seeds_cluster_fig_1": {
       "output_type": "display_data",
       "metadata": {
@@ -75,6 +59,22 @@
         },
         "filenames": {
           "image/png": "/Users/giuseppe.vettigli/Documents/ml_pages/ml_pages/_build/jupyter_execute/content/clustering_1_0.png"
+        }
+      },
+      "data": {
+        "application/papermill.record/text/plain": "<Figure size 432x288 with 1 Axes>",
+        "application/papermill.record/image/png": null
+      }
+    },
+    "seeds_cluster_fig_2": {
+      "output_type": "display_data",
+      "metadata": {
+        "scrapbook": {
+          "name": "seeds_cluster_fig_2",
+          "mime_prefix": "application/papermill.record/"
+        },
+        "filenames": {
+          "image/png": "/Users/giuseppe.vettigli/Documents/ml_pages/ml_pages/_build/jupyter_execute/content/clustering_3_0.png"
         }
       },
       "data": {

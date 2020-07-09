@@ -25,7 +25,7 @@ glue("fig_boston_1", fig, display=False)
 Number of rooms versus value for each suburb in Boston.
 ```
 
-The {ref}`figure above <fig-seeds-1>` shows the relationship between the number of rooms in a house and its value {cite}`boston_dataset`. Looking at the data we note that the more the rooms, the more expensive is the house. We can express this relation with a model and use the model to produce the estimate that we look for.
+The {ref}`figure above <fig-boston-1>` shows the relationship between the number of rooms in a house and its value {cite}`boston_dataset`. Looking at the data we note that the more the rooms, the more expensive is the house. We can express this relation with a model and use the model to produce the estimate that we look for.
 
 from sklearn.linear_model import HuberRegressor
 
@@ -43,11 +43,11 @@ plt.legend()
 glue("bostong_fig_2", fig, display=False)
 
 ```{glue:figure} bostong_fig_2
-:name: "bostong-fig-2"
+:name: "fig-boston-2"
 
 Model that predicts the value of the houses Boston given the number of rooms.
 ```
 
-In this new {ref}`version of the figure <bostong_fig_2>` we have highlighted a possible model. It's a line that fits our  insight and goes through the main points of the chart. Now we have the ability to pick any value on the x axis and produce the estimate that we need. To answer our initial question, we can see that the average price for a house with 6 rooms is $20,000. Well on our budget. Yay!
+In this new {ref}`version of the figure <fig-boston-2>` we have highlighted a possible model. It's a line that fits our  insight and goes through the main points of the chart. Now we have the ability to pick any value on the x axis and produce the estimate that we need. To answer our initial question, we can see that the average price for a house with 6 rooms is $20,000. Well on our budget. Yay!
 
 The secret to build these models is in creating a line that best fits the original points. We'll see a more rigorous approach later in this book.
