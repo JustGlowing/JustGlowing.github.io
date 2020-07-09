@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>The classification problem &#8212; Pages of Machine Learning</title>
+    <title>Pages of Machine Learning &#8212; Pages of Machine Learning</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
@@ -49,7 +49,7 @@
         <div class="navbar-brand-box">
 <a class="navbar-brand text-wrap" href="index.html">
   
-  <img src="_static/logo.png" class="logo" alt="logo">
+  <img src="_static/ml_pages_logo.png" class="logo" alt="logo">
   
   
   <h1 class="site-logo" id="site-title">Pages of Machine Learning</h1>
@@ -67,6 +67,9 @@
   <ul class="nav sidenav_l1">
   <li class="">
     <a href="content/foundations.html">Foundations</a>
+  </li>
+  <li class="">
+    <a href="zbibliography.html">Bibliography</a>
   </li>
 </ul>
 </nav>
@@ -113,9 +116,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/classification.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="_sources/Readme.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -149,47 +152,9 @@
         
               <div>
                 
-  <div class="section" id="the-classification-problem">
-<h1>The classification problem<a class="headerlink" href="#the-classification-problem" title="Permalink to this headline">¶</a></h1>
-<p>As humans we can easily recognize a face, tell one letter from another and decide whether our milk is spoiler or not. How can we a machine learn to accomplish similar tasks?</p>
-<p>Let’s illustrate the answer to this question with an example. At the end of the 10s a group of researchers collected a set of wheat kernels belonging to three different varieties (Kama, Rosa and Canadian). They scanned each of them with an X-ray machine and after they measured a set of <strong>features</strong> for each kernel:</p>
-<ul class="simple">
-<li><p>area A,</p></li>
-<li><p>perimeter P,</p></li>
-<li><p>compactness (C = <span class="math notranslate nohighlight">\(4 \pi A/P^2\)</span>),</p></li>
-<li><p>length of kernel</p></li>
-<li><p>width of kernel</p></li>
-<li><p>asymmetry coefficient</p></li>
-<li><p>length of kernel groove.</p></li>
-</ul>
-<p>In this scenario we can formulate a classification problem in quite straightforward fashion. Given a wheat kernel, can we tell its variety looking at the features listed above? This certainly seems like a doable task for a machine. After all, the features we are talking about are numerical values that machines can understand quite well.</p>
-<div class="cell tag_remove-input tag_remove-output docutils container">
-</div>
-<div class="figure align-default" id="fig-seeds-1">
-<div class="cell_output docutils container">
-<img alt="_images/classification_1_0.png" src="_images/classification_1_0.png" />
-</div>
-<p class="caption"><span class="caption-text">Area of the kernels versus compactness.</span><a class="headerlink" href="#fig-seeds-1" title="Permalink to this image">¶</a></p>
-</div>
-<p>If we pick two of the features listed above and plot them with a scatter chart, we have a space where each kernel is represent by a dot and we can color the dots according to variety of the kernel. Looking at <a class="reference internal" href="content/classification.html#fig-seeds-1"><span class="std std-ref">this figure</span></a> we can easily tell that each variety has a different area. Here the idea! If we say that all the kernels with area greater than 16mm belong to the <strong>class</strong> Rosa we have a <strong>model</strong> that classifies the kernels.</p>
-<div class="cell tag_remove-input tag_remove-output docutils container">
-</div>
-<div class="figure align-default" id="fig-seeds-2">
-<div class="cell_output docutils container">
-<img alt="_images/classification_3_0.png" src="_images/classification_3_0.png" />
-</div>
-<p class="caption"><span class="caption-text">Model that can be used by a machine to tell the kernels belonging to Rosa variety.</span><a class="headerlink" href="#fig-seeds-2" title="Permalink to this image">¶</a></p>
-</div>
-<p>We’re now in the position where given a box full of what kernels, we can build a machine that measures their area and applies the simple rule above to tell which kernels belong to the variety Rosa. This machine can save valuable hours of work for a human! But our position gets even more comfortable if we are able to tell apart all the varieties of kernels.</p>
-<div class="cell tag_remove-input tag_remove-output docutils container">
-</div>
-<div class="figure align-default" id="fig-seeds-3">
-<div class="cell_output docutils container">
-<img alt="_images/classification_5_0.png" src="_images/classification_5_0.png" />
-</div>
-<p class="caption"><span class="caption-text">Models that can be used by a machine to separate all the three varieties of kernels.</span><a class="headerlink" href="#fig-seeds-3" title="Permalink to this image">¶</a></p>
-</div>
-<p>In the <a class="reference internal" href="content/classification.html#fig-seeds-3"><span class="std std-ref">the figure above</span></a> we managed place all our kernels into bins that reflect their variety. This means that we have the specifications for a program that enables a machine to solve our classification problem.</p>
+  <div class="section" id="pages-of-machine-learning">
+<h1>Pages of Machine Learning<a class="headerlink" href="#pages-of-machine-learning" title="Permalink to this headline">¶</a></h1>
+<p>This is an exercise in communication and inclusivity with the goal to provide an easy introduction to Machine Learning.</p>
 </div>
 
 

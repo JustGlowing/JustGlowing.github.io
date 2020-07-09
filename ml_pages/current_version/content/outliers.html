@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>The classification problem &#8212; Pages of Machine Learning</title>
+    <title>The outliers investigation &#8212; Pages of Machine Learning</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="../_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
@@ -31,8 +31,8 @@
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="The regression question" href="regression.html" />
-    <link rel="prev" title="Foundations" href="foundations.html" />
+    <link rel="next" title="Bibliography" href="../zbibliography.html" />
+    <link rel="prev" title="The clustering exploration" href="clustering.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -70,17 +70,17 @@
   <li class="active">
     <a href="foundations.html">Foundations</a>
   <ul class="nav sidenav_l2">
-    <li class="active">
-      <a href="">The classification problem</a>
+    <li class="">
+      <a href="classification.html">The classification problem</a>
     </li>
     <li class="">
       <a href="regression.html">The regression question</a>
     </li>
     <li class="">
-      <a href="clustering.html">The clustering approach</a>
+      <a href="clustering.html">The clustering exploration</a>
     </li>
-    <li class="">
-      <a href="outliers.html">The outliers hunt</a>
+    <li class="active">
+      <a href="">The outliers investigation</a>
     </li>
   </ul>
   </li>
@@ -132,7 +132,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/content/classification.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/content/outliers.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -168,47 +168,28 @@
         
               <div>
                 
-  <div class="section" id="the-classification-problem">
-<h1>The classification problem<a class="headerlink" href="#the-classification-problem" title="Permalink to this headline">¶</a></h1>
-<p>As humans we can easily recognize a face, tell one letter from another and decide whether our milk is spoiler or not. How can we a machine learn to accomplish similar tasks?</p>
-<p>Let’s illustrate the answer to this question with an example. At the end of the 10s a group of researchers collected a set of wheat kernels belonging to three different varieties (Kama, Rosa and Canadian) <a class="bibtex reference internal" href="../zbibliography.html#seeds-dataset" id="id1">[CNK+10]</a>. They scanned each of them with an X-ray machine and after they measured a set of <strong>features</strong> for each kernel:</p>
-<ul class="simple">
-<li><p>area A,</p></li>
-<li><p>perimeter P,</p></li>
-<li><p>compactness (C = <span class="math notranslate nohighlight">\(4 \pi A/P^2\)</span>),</p></li>
-<li><p>length of kernel</p></li>
-<li><p>width of kernel</p></li>
-<li><p>asymmetry coefficient</p></li>
-<li><p>length of kernel groove.</p></li>
-</ul>
-<p>In this scenario we can formulate a classification problem in quite straightforward fashion. Given a wheat kernel, can we tell its variety looking at the features listed above? This certainly seems like a doable task for a machine. After all, the features we are talking about are numerical values that machines can understand quite well.</p>
+  <div class="section" id="the-outliers-investigation">
+<h1>The outliers investigation<a class="headerlink" href="#the-outliers-investigation" title="Permalink to this headline">¶</a></h1>
+<p>Unusual events often captivate our attention. In one study published in 2006, participants were shown a series of similar images (landscapes, interiors, faces, …) and, randomly, the an oddball image. In the meanwhile researchers were looking at the areas activated in the brains of the subjects. The experiment show that the pleasure centers of the brain were activated when the oddball was shown! <a class="bibtex reference internal" href="../zbibliography.html#oddball" id="id1">[BDuzel06]</a></p>
+<p>Replicating this behavior in a machine is particularly interesting because it means that the machine can bring to our attention cases where the data presents novelty that is worth human attention or cases where the data is simply wrong and can be discarded.</p>
 <div class="cell tag_remove-input tag_remove-output docutils container">
 </div>
-<div class="figure align-default" id="fig-seeds-1">
+<div class="figure align-default" id="expogrowth-fig-1">
 <div class="cell_output docutils container">
-<img alt="../_images/classification_1_0.png" src="../_images/classification_1_0.png" />
+<img alt="../_images/outliers_1_0.png" src="../_images/outliers_1_0.png" />
 </div>
-<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Area versus length of the kernels.</span><a class="headerlink" href="#fig-seeds-1" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">Worldwide search interest for the term “exponential growth” from Google Trends.</span><a class="headerlink" href="#expogrowth-fig-1" title="Permalink to this image">¶</a></p>
 </div>
-<p>If we pick two of the features listed above and plot them with a scatter chart, we have a space where each kernel is represent by a dot and we can color the dots according to variety of the kernel. Looking at <a class="reference internal" href="#fig-seeds-1"><span class="std std-ref">this figure</span></a> we can easily tell that each variety has a different area. Here the idea! If we say that all the kernels with area greater than 16mm belong to the <strong>class</strong> Rosa we have a <strong>model</strong> that classifies the kernels.</p>
+<p>In <a class="reference internal" href="#expogrowth-fig-1"><span class="std std-ref">this figure</span></a> we see the search interest regarding the term “exponential growth”. As we can see there is a seasonal interest that results in spikes during the exam periods but also a spike at the beginning of 2020 that is twice in magnitude to any other spike observed before. This was due to the COVID-19 pandemic, in which the spread of the virus that was causing the disease had an exponential growth and people were interested in stopping the growth.</p>
 <div class="cell tag_remove-input tag_remove-output docutils container">
 </div>
-<div class="figure align-default" id="fig-seeds-2">
+<div class="figure align-default" id="expogrowth-fig-2">
 <div class="cell_output docutils container">
-<img alt="../_images/classification_3_0.png" src="../_images/classification_3_0.png" />
+<img alt="../_images/outliers_3_0.png" src="../_images/outliers_3_0.png" />
 </div>
-<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Model that can be used by a machine to tell the kernels belonging to Rosa variety.</span><a class="headerlink" href="#fig-seeds-2" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">Outliers in the worldwide search interest for the term “exponential growth”.</span><a class="headerlink" href="#expogrowth-fig-2" title="Permalink to this image">¶</a></p>
 </div>
-<p>We’re now in the position where given a box full of what kernels, we can build a machine that measures their area and applies the simple rule above to tell which kernels belong to the variety Rosa. This machine can save valuable hours of work for a human! But our position gets even more comfortable if we are able to tell apart all the varieties of kernels.</p>
-<div class="cell tag_remove-input tag_remove-output docutils container">
-</div>
-<div class="figure align-default" id="fig-seeds-3">
-<div class="cell_output docutils container">
-<img alt="../_images/classification_5_0.png" src="../_images/classification_5_0.png" />
-</div>
-<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">Models that can be used by a machine to separate all the three varieties of kernels.</span><a class="headerlink" href="#fig-seeds-3" title="Permalink to this image">¶</a></p>
-</div>
-<p>In the <a class="reference internal" href="#fig-seeds-3"><span class="std std-ref">the figure above</span></a> we managed place all our kernels into bins that reflect their variety. This means that we have the specifications for a program that enables a machine to solve our classification problem.</p>
+<p>A machine can spot these outliers with a simple trick. If we look at the data we realize that the average interest previous to 2020 was about 30%. A rule to spot outliers is to consider all the values that are 3 times the average. The idea behind this rule is that only 0.1% of the values in the data should be that far from the average (under the assumption that the data is normally distributed). A machine can easily apply this rule to our data and highlight the outlier as in the <a class="reference internal" href="#expogrowth-fig-2"><span class="std std-ref"> figure above</span></a>.</p>
 </div>
 
 
@@ -220,8 +201,8 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="foundations.html" title="previous page">Foundations</a>
-    <a class='right-next' id="next-link" href="regression.html" title="next page">The regression question</a>
+    <a class='left-prev' id="prev-link" href="clustering.html" title="previous page">The clustering exploration</a>
+    <a class='right-next' id="next-link" href="../zbibliography.html" title="next page">Bibliography</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

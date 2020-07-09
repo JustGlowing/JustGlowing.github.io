@@ -2,7 +2,7 @@
 
 When we go to shopping and approach the till with a basket full of groceries to pay, we usually have an estimate of how much we are going to spend. Also, when we organize a pizza night and invite 10 people we have to know more or less how many pizzas to provide more or less. The estimate we produce is simply based on the previous experiences and our ability to put things in proportion. Machines can also provide estimates for numerical quantities in a similar way.
 
-Let's assume that we want to buy a house with 6 rooms and we have a budge of $30.000. With the right data, we can teach our machine to predict the price of our dreams.
+Let's assume that we want to buy a house with 6 rooms and we have a budge of $30,000. With the right data, we can teach our machine to predict the price of our dreams.
 
 from mlpages_lib import *
 %matplotlib inline
@@ -48,7 +48,6 @@ glue("bostong_fig_2", fig, display=False)
 Model that predicts the value of the houses Boston given the number of rooms.
 ```
 
-In this new {ref}`version of the figure <bostong_fig_2>` we have highlighted a possible model. It's a line that fits our  insight and goes through the main points of the chart. Now we have the ability to pick any value on the x axis and produce the estimate that we need. To answer our initial question, we can see that the average price for a house with 6 rooms is $20.000. Well on our budget. Yay!
+In this new {ref}`version of the figure <bostong_fig_2>` we have highlighted a possible model. It's a line that fits our  insight and goes through the main points of the chart. Now we have the ability to pick any value on the x axis and produce the estimate that we need. To answer our initial question, we can see that the average price for a house with 6 rooms is $20,000. Well on our budget. Yay!
 
 The secret to build these models is in creating a line that best fits the original points. We'll see a more rigorous approach later in this book.
-

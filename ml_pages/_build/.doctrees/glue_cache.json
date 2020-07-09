@@ -1,6 +1,6 @@
 {
   "content/classification": {
-    "seeds_fig_1": {
+    "seeds_fig_2": {
       "data": {
         "application/papermill.record/image/png": null,
         "application/papermill.record/text/plain": "<Figure size 432x288 with 1 Axes>"
@@ -8,10 +8,10 @@
       "metadata": {
         "scrapbook": {
           "mime_prefix": "application/papermill.record/",
-          "name": "seeds_fig_1"
+          "name": "seeds_fig_2"
         },
         "filenames": {
-          "image/png": "/Users/giuseppe.vettigli/Documents/ml_pages/ml_pages/_build/jupyter_execute/content/classification_1_0.png"
+          "image/png": "/Users/giuseppe.vettigli/Documents/ml_pages/ml_pages/_build/jupyter_execute/content/classification_3_0.png"
         }
       },
       "output_type": "display_data"
@@ -32,7 +32,7 @@
       },
       "output_type": "display_data"
     },
-    "seeds_fig_2": {
+    "seeds_fig_1": {
       "data": {
         "application/papermill.record/image/png": null,
         "application/papermill.record/text/plain": "<Figure size 432x288 with 1 Axes>"
@@ -40,10 +40,10 @@
       "metadata": {
         "scrapbook": {
           "mime_prefix": "application/papermill.record/",
-          "name": "seeds_fig_2"
+          "name": "seeds_fig_1"
         },
         "filenames": {
-          "image/png": "/Users/giuseppe.vettigli/Documents/ml_pages/ml_pages/_build/jupyter_execute/content/classification_3_0.png"
+          "image/png": "/Users/giuseppe.vettigli/Documents/ml_pages/ml_pages/_build/jupyter_execute/content/classification_1_0.png"
         }
       },
       "output_type": "display_data"
@@ -58,7 +58,7 @@
           "mime_prefix": "application/papermill.record/"
         },
         "filenames": {
-          "image/png": "/Users/giuseppe.vettigli/Documents/ml_pages/ml_pages/_build/jupyter_execute/content/clustering_2_0.png"
+          "image/png": "/Users/giuseppe.vettigli/Documents/ml_pages/ml_pages/_build/jupyter_execute/content/clustering_3_0.png"
         }
       },
       "data": {
@@ -92,6 +92,22 @@
           "mime_prefix": "application/papermill.record/"
         },
         "filenames": {
+          "image/png": "/Users/giuseppe.vettigli/Documents/ml_pages/ml_pages/_build/jupyter_execute/content/outliers_1_0.png"
+        }
+      },
+      "data": {
+        "application/papermill.record/text/plain": "<Figure size 720x360 with 1 Axes>",
+        "application/papermill.record/image/png": null
+      }
+    },
+    "expogrowth_fig_2": {
+      "output_type": "display_data",
+      "metadata": {
+        "scrapbook": {
+          "name": "expogrowth_fig_2",
+          "mime_prefix": "application/papermill.record/"
+        },
+        "filenames": {
           "image/png": "/Users/giuseppe.vettigli/Documents/ml_pages/ml_pages/_build/jupyter_execute/content/outliers_3_0.png"
         }
       },
@@ -103,36 +119,36 @@
   },
   "content/regression": {
     "bostong_fig_2": {
-      "output_type": "display_data",
+      "data": {
+        "application/papermill.record/image/png": null,
+        "application/papermill.record/text/plain": "<Figure size 432x288 with 1 Axes>"
+      },
       "metadata": {
         "scrapbook": {
-          "name": "bostong_fig_2",
-          "mime_prefix": "application/papermill.record/"
+          "mime_prefix": "application/papermill.record/",
+          "name": "bostong_fig_2"
         },
         "filenames": {
           "image/png": "/Users/giuseppe.vettigli/Documents/ml_pages/ml_pages/_build/jupyter_execute/content/regression_3_0.png"
         }
       },
-      "data": {
-        "application/papermill.record/text/plain": "<Figure size 432x288 with 1 Axes>",
-        "application/papermill.record/image/png": null
-      }
+      "output_type": "display_data"
     },
     "fig_boston_1": {
-      "output_type": "display_data",
+      "data": {
+        "application/papermill.record/image/png": null,
+        "application/papermill.record/text/plain": "<Figure size 432x288 with 1 Axes>"
+      },
       "metadata": {
         "scrapbook": {
-          "name": "fig_boston_1",
-          "mime_prefix": "application/papermill.record/"
+          "mime_prefix": "application/papermill.record/",
+          "name": "fig_boston_1"
         },
         "filenames": {
           "image/png": "/Users/giuseppe.vettigli/Documents/ml_pages/ml_pages/_build/jupyter_execute/content/regression_1_0.png"
         }
       },
-      "data": {
-        "application/papermill.record/text/plain": "<Figure size 432x288 with 1 Axes>",
-        "application/papermill.record/image/png": null
-      }
+      "output_type": "display_data"
     }
   }
 }
