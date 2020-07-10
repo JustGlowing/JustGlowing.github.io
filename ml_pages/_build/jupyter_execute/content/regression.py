@@ -51,3 +51,7 @@ Model that predicts the value of the houses Boston given the number of rooms.
 In this new {ref}`version of the figure <fig-boston-2>` we have highlighted a possible model. It's a line that fits our  insight and goes through the main points of the chart. Now we have the ability to pick any value on the x axis and produce the estimate that we need. To answer our initial question, we can see that the average price for a house with 6 rooms is $20,000. Well on our budget. Yay!
 
 The secret to build these models is in creating a line that best fits the original points. We'll see a more rigorous approach later in this book.
+
+```{warning}
+You might have noticed that in that chart the model suggests that houses with 4 rooms have a value of $0. Of course this doesn't reflect reality and highlights the fact that the results of this model can't be blindly accepted.
+```
