@@ -42,5 +42,5 @@ glue("seeds_cluster_fig_2", fig, display=False)
 Two clusters highlighted in the seeds dataset.
 ```
 
-Given that a machine can easily compute the distance between two points on a plane like one. It follows that it can also group points into clusters that contain points that are closer to one another. In {ref}`the figure above <seeds-cluster-fig-2>` the two clusters just discussed are highlighted with different colors. These two clusters also correspond to two varieties of seeds (Canadian and Rosa).
+Given that a machine can easily compute the distance between two points on a plane like one, it can also group points into clusters that contain points that are closer to one another. In {ref}`the figure above <seeds-cluster-fig-2>` the two clusters just discussed are highlighted with different colors. These two clusters also correspond to two varieties of seeds (Canadian and Rosa).
 
